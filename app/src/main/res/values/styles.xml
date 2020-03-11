@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <resources>
+=======
+<resources xmlns:tools="http://schemas.android.com/tools">
+>>>>>>> upload-image-profile-Save-User-CicleImageView
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,4 +12,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<<<<<<< HEAD
+=======
+    <!-- Remover ActionbanBar Direto no AndroidManifest -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+>>>>>>> upload-image-profile-Save-User-CicleImageView
 </resources>
