@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.already_have_an_account_text_view
+import kotlinx.android.synthetic.main.activity_register.already_have_an_account_text_view
 
 class LoginActivity: AppCompatActivity() {
 

@@ -4,7 +4,7 @@
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="j_tem_conta">já tem conta? Clique aqui </string>
-    <string name="voltar_para_cadastro">Voltar para tela de cadastro</string>
+    <string name="voltar_para_cadastro">Cadastrar</string>
     <string name="entrar">Entrar</string>
     <string name="creator">Cadastrar</string>
 </resources>
