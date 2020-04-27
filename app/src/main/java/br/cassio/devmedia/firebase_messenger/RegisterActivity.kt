@@ -167,11 +167,12 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     /**
-     * Salve user imagem firebase database
+     * Salve user imagem firebase database e inicializa a ActivityLatest
+     * messages
      */
     private fun saveUserToFirebaseDatabase(profileImageUrl: String) {
         val uid = FirebaseAuth.getInstance().uid ?: ""
-        val ref = FirebaseDatabase.getInstance().getReference("/user/$uid")
+        val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
 
         val user = User(uid, name_edittext_register.text.toString(), profileImageUrl)
 
@@ -179,6 +180,10 @@ class RegisterActivity : AppCompatActivity() {
             .addOnSuccessListener {
                 Log.d(TAG, "Finalizando, salvando o usuario no firebase")
 
+                /**
+                 * apos salvar dados
+                 * iniciando LatestMessagesActivity
+                 */
                 val intent = Intent(this, LatestMessagesActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
@@ -189,13 +194,14 @@ class RegisterActivity : AppCompatActivity() {
             }
 
     }
+    /**
+     * classe que representa o usuario
+     *
+     * @property uid
+     * @property username
+     * @property profileImageUrl
+     */
+    class User(val uid: String, val username: String, val profileImageUrl: String)
 }
 
-/**
- * classe que representa o usuario
- *
- * @property uid
- * @property username
- * @property profileImageUrl
- */
-class User(val uid: String, val username: String, val profileImageUrl: String)
+
