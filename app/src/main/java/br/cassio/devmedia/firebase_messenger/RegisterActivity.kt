@@ -2,9 +2,7 @@ package br.cassio.devmedia.firebase_messenger
 
 import android.app.Activity
 import android.content.Intent
-import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
@@ -27,24 +25,35 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+        /**
+         * Botão cadastrar
+         */
         register_button_register.setOnClickListener {
+
             perFormaRegister()
+
         }
 
-        already_have_an_account_text_view.setOnClickListener {
-            Log.d("MainActivity", "Trocar de activity")
+        already_have_account_text_view.setOnClickListener {
 
-            //navegar entre as activity
-            val intent = Intent(this, LoginActivity::class.java)
+            Log.d("MainActivity","mostrar a atividade de login")
+
+            /**
+             * navegar entre as activity
+             */
+            val intent =  Intent(this,LoginActivity::class.java)
             startActivity(intent)
 
         }
+
         selectphoto_select_button_register.setOnClickListener {
             Log.d(TAG, "try show photo selector ")
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, 0)
         }
+
+
 
     }
 
@@ -65,30 +74,38 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Classe cadastrar e validar cadastro em firebase.
+     * validacão de campos de cadastro
+     */
     private fun perFormaRegister() {
 
         val name = name_edittext_register.text.toString()
         val email = email_edittext_register.text.toString()
         val password = password_edittext_register.text.toString()
 
-        //validação de campos de cadastro
+        /**
+         * validação de campos de cadastro se estiverem em branco
+         */
         if (email.isEmpty() || password.isEmpty() || name.isEmpty()) {
             Toast.makeText(this, "Os campos são OBRIGATÓRIOS ", Toast.LENGTH_SHORT).show()
             return
         }
-        //For The Fallen Dreams
+
         Log.d(TAG, "Name: $name")
         Log.d(TAG, "E-mail is:" + email)
         Log.d(TAG, "Password: $password")
 
-        //FireBase Authentication to create a user with email and passoword
+        /**
+         * Autenticação FireBase para criar um usuário com email e senha
+         */
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if (!it.isSuccessful) return@addOnCompleteListener
 
-                //else if successful
+                //else if bem-sucedida
                 Log.d(TAG,
-                    "( Boa )Successfully created user with uid: ${it.result?.user?.uid}"
+                    "( Boa )User criado com sucesso ${it.result?.user?.uid}"
                 )
                 Toast.makeText(
                     this,
@@ -100,7 +117,7 @@ class RegisterActivity : AppCompatActivity() {
             }
             .addOnFailureListener {
 
-                Log.d(TAG, "( FALHA )Failure created user: ${it.message}")
+                Log.d(TAG, "( FALHA )Falha ao criar user: ${it.message}")
                 Toast.makeText(
                     this, "Erro ao criar user: ${it.message}", Toast
                         .LENGTH_SHORT
