@@ -15,6 +15,7 @@ import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_register.*
 import java.util.*
 
+
 class RegisterActivity : AppCompatActivity() {
 
     companion object {
@@ -148,60 +149,58 @@ class RegisterActivity : AppCompatActivity() {
         if (selectPhotoUri == null) return
 
         val filename = UUID.randomUUID().toString()
-        val ref = FirebaseStorage.getInstance().getReference("images/$filename")
+        val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
 
-        ref.putFile(selectPhotoUri!!).addOnSuccessListener {
-            Log.d("RegisterActivity", "Upload sucesso : ${it.metadata?.path}")
+        ref.putFile(selectPhotoUri!!)
+            .addOnSuccessListener {
+                Log.d("RegisterActivity","sucesso update imagem: ${it.metadata?.path}")
 
-            ref.downloadUrl.addOnSuccessListener {
-                it.toString()
-                Log.d(TAG, "Localização de arquivo: ${it}")
+                ref.downloadUrl.addOnSuccessListener { it ->
 
-                saveUserToFirebaseDatabase(it.toString())
+                    Log.d(TAG, "Localização de arquivo: $it")
+
+                    saveUserToFirebaseDatabase(it.toString())
+
+                }
+
+            }
+            .addOnFailureListener{
+                Log.d(TAG, "Falha ao definir valor para database${it.message}")
             }
 
-        }
-            .addOnFailureListener {
-                Log.d(TAG, "Falha ao carregar imagem ${it.message}")
-            }
     }
 
     /**
      * Salve user imagem firebase database e inicializa a ActivityLatest
      * messages
      */
-    private fun saveUserToFirebaseDatabase(profileImageUrl: String) {
-        val uid = FirebaseAuth.getInstance().uid ?: ""
-        val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
+private fun saveUserToFirebaseDatabase(profileImageUrl: String){
+       val uid = FirebaseAuth.getInstance().uid?:""
+       val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
 
-        val user = User(uid, name_edittext_register.text.toString(), profileImageUrl)
+       val user = User(uid, name_edittext_register.text.toString(), profileImageUrl)
+       ref.setValue(user)
+           .addOnSuccessListener {
+               Log.d(TAG, "Finalizando save user em firebase database")
 
-        ref.setValue(user)
-            .addOnSuccessListener {
-                Log.d(TAG, "Finalizando, salvando o usuario no firebase")
+               /**
+                * apos salvar dados
+                * iniciando LatestMessagesActivity
+                */
+               val intent = Intent(this, LatestMessagesActivity::class.java)
+               intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+               startActivity(intent)
 
-                /**
-                 * apos salvar dados
-                 * iniciando LatestMessagesActivity
-                 */
-                val intent = Intent(this, LatestMessagesActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
+           }
+           }
 
-            }
-            .addOnFailureListener {
-                Log.d(TAG, "Falha ao definir valor para database${it.message}")
-            }
+   }
 
-    }
-    /**
-     * classe que representa o usuario
-     *
-     * @property uid
-     * @property username
-     * @property profileImageUrl
-     */
-    class User(val uid: String, val username: String, val profileImageUrl: String)
-}
-
-
+/**
+ * classe que representa o usuario
+ *
+ * @property uid
+ * @property username
+ * @property profileImageUrl
+ */
+class User(val uid: String, val username: String, val profileImageUrl: String)
