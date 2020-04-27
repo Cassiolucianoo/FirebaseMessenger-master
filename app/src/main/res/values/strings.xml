@@ -8,4 +8,6 @@
     <string name="entrar">Entrar</string>
     <string name="creator">Cadastrar</string>
     <string name="select_photo">Foto do perfil</string>
+    <string name="sign_out">Sair</string>
+    <string name="new_message">Nova Menssagem</string>
 </resources>
