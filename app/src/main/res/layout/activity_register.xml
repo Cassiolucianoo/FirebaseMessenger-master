@@ -92,7 +92,6 @@
         android:id="@+id/selectphoto_select_button_register"
         android:layout_width="180dp"
         android:layout_height="180dp"
-
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="30dp"
@@ -100,7 +99,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_select_photo_user"
-        android:text="Select Photo"
+        android:text="@string/select_photo"
         android:textColor="@color/Text_White"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/name_edittext_register"

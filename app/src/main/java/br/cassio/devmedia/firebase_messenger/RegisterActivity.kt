@@ -17,7 +17,7 @@ import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         val TAG = "RegisterActivity"
     }
 
@@ -34,35 +34,49 @@ class RegisterActivity : AppCompatActivity() {
 
         }
 
+        /**
+         * Ja tem uma conta ?  ao clicar no botão vai abrir activity login
+         */
         already_have_account_text_view.setOnClickListener {
 
-            Log.d("MainActivity","mostrar a atividade de login")
+            Log.d("MainActivity", "mostrar a atividade de login")
 
             /**
              * navegar entre as activity
              */
-            val intent =  Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
 
         }
 
+        /**
+         * Apresenta o seletor de fotos
+         */
         selectphoto_select_button_register.setOnClickListener {
-            Log.d(TAG, "try show photo selector ")
+            Log.d("RegisterActivity", "mostrar o seletor de fotos")
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, 0)
         }
 
-
-
     }
 
+    //Foto selelcionada
     var selectPhotoUri: Uri? = null
 
+    /**
+     * Função selecionar a foto
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(resultCode, requestCode, data)
+        //continue e verifique qual foi a imagem selecionada
         if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null) {
-            Log.d(TAG, "Photo was selected")
+
+            Log.d(TAG, "A foto foi selecionada")
 
             selectPhotoUri = data.data
 
@@ -104,7 +118,8 @@ class RegisterActivity : AppCompatActivity() {
                 if (!it.isSuccessful) return@addOnCompleteListener
 
                 //else if bem-sucedida
-                Log.d(TAG,
+                Log.d(
+                    TAG,
                     "( Boa )User criado com sucesso ${it.result?.user?.uid}"
                 )
                 Toast.makeText(
@@ -125,6 +140,10 @@ class RegisterActivity : AppCompatActivity() {
             }
     }
 
+    /**
+     * Upload de iamgem em firebase
+     *
+     */
     private fun updateFirebaseImageToStorage() {
         if (selectPhotoUri == null) return
 
@@ -136,17 +155,20 @@ class RegisterActivity : AppCompatActivity() {
 
             ref.downloadUrl.addOnSuccessListener {
                 it.toString()
-                Log.d(TAG, "File Location : ${it}")
+                Log.d(TAG, "Localização de arquivo: ${it}")
 
                 saveUserToFirebaseDatabase(it.toString())
             }
 
         }
             .addOnFailureListener {
-                Log.d(TAG, "Failed to update image to storage ${it.message}")
+                Log.d(TAG, "Falha ao carregar imagem ${it.message}")
             }
     }
 
+    /**
+     * Salve user imagem firebase database
+     */
     private fun saveUserToFirebaseDatabase(profileImageUrl: String) {
         val uid = FirebaseAuth.getInstance().uid ?: ""
         val ref = FirebaseDatabase.getInstance().getReference("/user/$uid")
@@ -155,7 +177,7 @@ class RegisterActivity : AppCompatActivity() {
 
         ref.setValue(user)
             .addOnSuccessListener {
-                Log.d(TAG, "Finaly we save the user Firebase")
+                Log.d(TAG, "Finalizando, salvando o usuario no firebase")
 
                 val intent = Intent(this, LatestMessagesActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -163,10 +185,17 @@ class RegisterActivity : AppCompatActivity() {
 
             }
             .addOnFailureListener {
-                Log.d(TAG, "Failed to set value to fdatabase${it.message}")
+                Log.d(TAG, "Falha ao definir valor para database${it.message}")
             }
 
     }
 }
 
+/**
+ * classe que representa o usuario
+ *
+ * @property uid
+ * @property username
+ * @property profileImageUrl
+ */
 class User(val uid: String, val username: String, val profileImageUrl: String)

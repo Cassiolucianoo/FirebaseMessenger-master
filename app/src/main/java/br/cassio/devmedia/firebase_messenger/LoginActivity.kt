@@ -34,6 +34,10 @@ class LoginActivity : AppCompatActivity() {
              */
             Log.d("login", "Email and Password: $email / *******")
 
+            /**
+             * firebase auth e obtenha a instância, em vez de chamar create user
+             * você só quer dizer entre com e-mail e senha
+             */
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
             // .addOnCompleteListener()
             //  .add
