@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
+
 import kotlinx.android.synthetic.main.activity_register.*
 import java.util.*
 
@@ -202,4 +203,6 @@ private fun saveUserToFirebaseDatabase(profileImageUrl: String){
  * @property username
  * @property profileImageUrl
  */
-class User(val uid: String, val username: String, val profileImageUrl: String)
+class User(val uid: String, val username: String, val profileImageUrl: String){
+    constructor(): this("","","" )
+}
