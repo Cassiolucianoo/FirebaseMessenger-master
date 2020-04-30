@@ -3,23 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="240dp"
-        android:text="Essa é a minha mensagem, Essa é a minha mensagem,Essa é a minha mensagem"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_edittext_register_login"
+        android:maxWidth="240dp"
         android:padding="16dp"
+        android:text="Essa é a minha mensagem, Essa é a minha mensagem,Essa é a minha mensagem"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="@+id/imageButton"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
+        android:background="@android:color/darker_gray"
+
         android:id="@+id/imageButton"
         android:layout_width="50dp"
         android:layout_height="50dp"

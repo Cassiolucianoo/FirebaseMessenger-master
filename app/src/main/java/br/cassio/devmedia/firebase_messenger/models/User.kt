@@ -1,5 +1,8 @@
 package br.cassio.devmedia.firebase_messenger.models
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
 /**
  * classe que representa o usuario
  *
@@ -7,6 +10,8 @@ package br.cassio.devmedia.firebase_messenger.models
  * @property username
  * @property profileImageUrl
  */
-class User(val uid: String, val username: String, val profileImageUrl: String){
+
+@Parcelize
+class User(val uid: String, val username: String, val profileImageUrl: String):Parcelable{
     constructor(): this("","","" )
 }
