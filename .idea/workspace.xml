@@ -12,11 +12,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a835502-77aa-4b07-833d-43b7fa8e24f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/ChatLogActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/models/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_log.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/chat_from_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_xwray_groupie_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_xwray_groupie_2_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/LatestMessagesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/LatestMessagesActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/NewMessageActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/NewMessageActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/RegisterActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_latest_messages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_latest_messages.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -30,7 +53,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -56,16 +79,108 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Firebase_Messenger" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/LoginActivity.kt">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/RegisterActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="137">
+              <caret line="183" column="22" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
+              <folding>
+                <element signature="e#47#514#0" expanded="true" />
+                <element signature="e#941#1031#0" />
+                <element signature="e#1352#1407#0" />
+                <element signature="e#1757#1877#0" />
+                <element signature="e#2643#2749#0" />
+                <element signature="e#2981#3062#0" />
+                <element signature="e#3381#3469#0" />
+                <element signature="e#4389#4443#0" />
+                <element signature="e#5197#5297#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_latest_messages.xml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_chat_log.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="26" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/LatestMessagesActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/NewMessageActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding>
+                <element signature="e#56#822#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/LoginActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
+              <folding>
+                <element signature="e#579#680#0" />
+                <element signature="e#742#805#0" />
+                <element signature="e#939#1025#0" />
+                <element signature="e#1106#1265#0" />
+                <element signature="e#1430#1560#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/ChatLogActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+              <folding>
+                <element signature="e#56#307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chat_from_row.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/models/User.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -75,10 +190,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="resourceFile" />
-        <option value="layoutResourceFile_vertical" />
         <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -86,7 +202,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Launch_on_latest_messages_activity" />
+        <entry key="$PROJECT_DIR$" value="NewMessageActivity" />
       </map>
     </option>
   </component>
@@ -107,7 +223,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/nav_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/LatestMessagesActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/exempleitem.xml" />
@@ -118,14 +233,24 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/RegisterActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/user_row_new_message.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/NewMessageActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/LatestMessagesActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/models/User.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/RegisterActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/User.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/models/User.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/NewMessageActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_log.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/ChatLogActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/chat_from_row.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-313" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -163,11 +288,50 @@
             <path>
               <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="firebase_messenger" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="firebase_messenger" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="firebase_messenger" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="firebase_messenger" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="registerlogin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="Firebase_Messenger" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -192,11 +356,19 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cassio\Documents\GitHub\FirebaseMessenger-master\app\src\main\java\br\cassio\devmedia\firebase_messenger\messages" />
+      <recent name="C:\Users\Cassio\Documents\GitHub\FirebaseMessenger-master\app\src\main\java\br\cassio\devmedia\firebase_messenger\registerlogin" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="br.cassio.devmedia.firebase_messenger" />
     </key>
     <key name="android.template.packageName">
       <recent name="br.cassio.devmedia.firebase_messenger" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.cassio.devmedia.firebase_messenger.messages" />
+      <recent name="br.cassio.devmedia.firebase_messenger.registerlogin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Cassio\Documents\GitHub\FirebaseMessenger-master\app" />
@@ -319,10 +491,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-313" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49756098" visible="true" weight="0.22654584" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49756098" visible="true" weight="0.28366113" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" sideWeight="0.502439" side_tool="true" weight="0.15355521" />
       <window_info id="Image Layers" order="4" />
@@ -332,19 +505,19 @@
       <window_info id="Favorites" order="8" sideWeight="0.502439" side_tool="true" weight="0.15355521" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.7170953" weight="0.29459903" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.19312602" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.22422259" />
       <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.23726977" />
+      <window_info anchor="bottom" id="Terminal" order="5" visible="true" weight="0.049099836" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.28290468" side_tool="true" weight="0.3535188" />
-      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.2111293" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.49295774" />
+      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49924356" weight="0.3878887" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.049099836" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.18821605" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.33509833" />
+      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.24205749" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="StringPreview" order="6" />
     </layout>
@@ -516,35 +689,13 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/217b649ea2702e6b446e0698ee4645df/firebase-storage-19.1.1/jars/classes.jar!/com/google/firebase/storage/StorageReference.class" />
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b7615c9d2d2c5306aa0c3373a33560e7/jetified-firebase-database-16.0.1/jars/classes.jar!/com/google/firebase/database/FirebaseDatabase.class" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/nav_menu.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_latest_messages.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="25" column="76" lean-forward="true" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
-          <folding>
-            <element signature="e#330#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/LatestMessagesActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9c6d64f057909c55b9335fe9f46b620/material-1.1.0-alpha08/res/values/values.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -573,10 +724,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/example_item.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/RegisterActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/user_row_new_message.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="206" column="33" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="33" />
+        <state relative-caret-position="124">
+          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/User.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/models/User.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/RegisterActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="183" column="22" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
           <folding>
             <element signature="e#47#514#0" expanded="true" />
             <element signature="e#941#1031#0" />
@@ -591,23 +776,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/user_row_new_message.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_message.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_message.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/ChatLogActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+        <state relative-caret-position="187">
+          <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding>
+            <element signature="e#56#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/LatestMessagesActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_latest_messages.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/messages/NewMessageActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="e#56#822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/registerlogin/LoginActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
+          <folding>
+            <element signature="e#579#680#0" />
+            <element signature="e#742#805#0" />
+            <element signature="e#939#1025#0" />
+            <element signature="e#1106#1265#0" />
+            <element signature="e#1430#1560#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_chat_log.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chat_from_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/NewMessageActivity.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/cassio/devmedia/firebase_messenger/LoginActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
   </component>
 </project>
