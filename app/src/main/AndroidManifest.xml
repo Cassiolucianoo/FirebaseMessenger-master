@@ -11,7 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".messages.LatestMessagesActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+        <activity android:name=".registerlogin.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,13 +27,28 @@
             </intent-filter>
         </activity>
 <<<<<<< HEAD
+        <activity android:name=".registerlogin.LoginActivity" />
+        <activity android:name=".messages.NewMessageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages.LatestMessagesActivity"/>
+=======
+<<<<<<< HEAD
         <activity android:name=".LoginActivity">
 =======
         <activity android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
 >>>>>>> upload-image-profile-Save-User-CicleImageView
 
+>>>>>>> master
         </activity>
-    </application>
+        <activity android:name=".messages.ChatLogActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages.LatestMessagesActivity"/>
+        </activity>
 
+
+
+    </application>
 </manifest>

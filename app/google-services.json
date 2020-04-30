@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "937121669231",
-    "firebase_url": "https://kotlinmessenger-a3779.firebaseio.com",
-    "project_id": "kotlinmessenger-a3779",
-    "storage_bucket": "kotlinmessenger-a3779.appspot.com"
+    "project_number": "443418064561",
+    "firebase_url": "https://chat-d16cd.firebaseio.com",
+    "project_id": "chat-d16cd",
+    "storage_bucket": "chat-d16cd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:937121669231:android:c23af29a1a11fa95266d9a",
+        "mobilesdk_app_id": "1:443418064561:android:1191e4565dba6b15e21490",
         "android_client_info": {
           "package_name": "br.cassio.devmedia.firebase_messenger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "937121669231-j4qgvk6du6f2obb531vh2q5s35sdgl1r.apps.googleusercontent.com",
+          "client_id": "443418064561-5sr0hvj146a3fd0k79k2m78p0104un6p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAw9wH2m5QDVVFvwp3-VoznIOVgZyIw_OQ"
+          "current_key": "AIzaSyCeLkrQzg0m7SbTJQPOpNZQsFGDYbUjp0s"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "937121669231-j4qgvk6du6f2obb531vh2q5s35sdgl1r.apps.googleusercontent.com",
+              "client_id": "443418064561-5sr0hvj146a3fd0k79k2m78p0104un6p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
