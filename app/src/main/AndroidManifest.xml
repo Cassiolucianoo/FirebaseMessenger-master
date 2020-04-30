@@ -26,11 +26,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".registerlogin.LoginActivity" />
         <activity android:name=".messages.NewMessageActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity"/>
+=======
+<<<<<<< HEAD
+        <activity android:name=".LoginActivity">
+=======
+        <activity android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> upload-image-profile-Save-User-CicleImageView
+
+>>>>>>> master
         </activity>
         <activity android:name=".messages.ChatLogActivity" >
             <meta-data
