@@ -16,14 +16,18 @@
         android:maxWidth="240dp"
         android:padding="16dp"
         android:text="Essa é a minha mensagem, Essa é a minha mensagem,Essa é a minha mensagem"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageview_chat_from_row"
+        app:layout_constraintTop_toTopOf="@+id/imageview_chat_from_row"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <de.hdodenhof.circleimageview.CircleImageView
         android:background="@android:color/darker_gray"
 
-        android:id="@+id/imageButton"
+
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/black"
+
+        android:id="@+id/imageview_chat_from_row"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="8dp"
